@@ -1,0 +1,527 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      7305,        347]*)
+(*NotebookOutlinePosition[      7942,        369]*)
+(*  CellTagsIndexPosition[      7898,        365]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    \(<< NumberTheory`NumberTheoryFunctions`\)], "Input"],
+
+Cell[BoxData[
+    \(Choose\ a\ six\ digit\ prime\  ... \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p = 100981\)], "Input"],
+
+Cell[BoxData[
+    \(100981\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(\(...\)\(\ \)\(such\)\(\ \)\(that\)\(\ \)\(p\)\) - 
+      1\ has\ small\ \(\(factors\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FactorInteger[p - 1]\)], "Input"],
+
+Cell[BoxData[
+    \({{2, 2}, {3, 3}, {5, 1}, {11, 1}, {17, 1}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(7\ is\ a\ primitive\ root\ mod\ \(\(p\)\(:\)\
+\)\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(alpha = 7\)], "Input"],
+
+Cell[BoxData[
+    \(7\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[alpha, \((p - 1)\)/2, p]\)], "Input"],
+
+Cell[BoxData[
+    \(100980\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[alpha, \((p - 1)\)/3, p]\)], "Input"],
+
+Cell[BoxData[
+    \(39995\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[alpha, \((p - 1)\)/5, p]\)], "Input"],
+
+Cell[BoxData[
+    \(45195\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[alpha, \((p - 1)\)/11, p]\)], "Input"],
+
+Cell[BoxData[
+    \(62356\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[alpha, \((p - 1)\)/17, p]\)], "Input"],
+
+Cell[BoxData[
+    \(84576\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Compute\ alpha\ inverse\ for\ later\ \(\(use\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(alpha' = PowerMod[alpha, \(-1\), p]\)], "Input"],
+
+Cell[BoxData[
+    \(14426\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    \(What' 
+      s\ the\ discrete\ log\ of\ b\ to\ the\ base\ 2?\ \ Call\ it\ \(\(a\)\(.\
+\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(b = 54321\)], "Input"],
+
+Cell[BoxData[
+    \(54321\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[b, \((p - 1)\)/2, p]\)], "Input"],
+
+Cell[BoxData[
+    \(100980\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(\(So\)\(\ \)\(a\)\(\ \)\(is\)\(\ \)\(congruent\)\(\ \)\(to\)\(\ \)\(1\
+\)\(\ \)\(mod\)\(\ \)\(2.\)\(\ \ \)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(b1 = Mod[b*alpha', p]\)], "Input"],
+
+Cell[BoxData[
+    \(22186\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[b1, \((p - 1)\)/4, p]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Thus\ a\ is\ congruent\ to\ 1\ mod\ 4. \)], "Input"],
+
+Cell[BoxData[
+    \(Now\ look\ at\ a\ mod\ powers\ of\ 3. \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Do[Print[PowerMod[7, i*\((p - 1)\)/3, p]], {i, 0, 2}]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Print"],
+
+Cell[BoxData[
+    \(39995\)], "Print"],
+
+Cell[BoxData[
+    \(60985\)], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[b, \((p - 1)\)/3, p]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[b, \((p - 1)\)/9, p]\)], "Input"],
+
+Cell[BoxData[
+    \(39995\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(b1 = Mod[b*alpha'^3, p]\)], "Input"],
+
+Cell[BoxData[
+    \(35487\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[b1, \((p - 1)\)/27, p]\)], "Input"],
+
+Cell[BoxData[
+    \(60985\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(So\ a\ is\ congruent\ to\ 21\  = \ 
+      0\  + \ 1*3\  + 2*9\ \ modulo\ 27\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(t = Table[PowerMod[7, i*\((p - 1)\)/5, p], {i, 1, 5}]\)], "Input"],
+
+Cell[BoxData[
+    \({45195, 45338, 45439, 65989, 1}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Do[If[PowerMod[b, \((p - 1)\)/5, p] \[Equal] \ t[\([i]\)], 
+        Print[i]], {i, 1, 5}]\)], "Input"],
+
+Cell[BoxData[
+    \(4\)], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(So\ a\ is\ congruent\ to\ 4\ mod\ 5\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(t = Table[PowerMod[7, i*\((p - 1)\)/11, p], {i, 1, 11}]\)], "Input"],
+
+Cell[BoxData[
+    \({62356, 98312, 89505, 54891, 32201, 19352, 91343, 51784, 74648, 31493, 
+      1}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Do[If[PowerMod[b, \((p - 1)\)/11, p] \[Equal] \ t[\([i]\)], 
+        Print[i]], {i, 1, 11}]\)], "Input"],
+
+Cell[BoxData[
+    \(7\)], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(So\ a\ is\ congruent\ to\ 7\ mod\ 11\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(t = Table[PowerMod[7, i*\((p - 1)\)/17, p], {i, 1, 17}]\)], "Input"],
+
+Cell[BoxData[
+    \({84576, 9660, 67870, 9156, 55548, 88585, 81627, 18106, 57172, 4868, 
+      16431, 68715, 82309, 38787, 81527, 42910, 1}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Do[If[PowerMod[b, \((p - 1)\)/17, p] \[Equal] \ t[\([i]\)], 
+        Print[i]], {i, 1, 17}]\)], "Input"],
+
+Cell[BoxData[
+    \(5\)], "Print"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(And\ a\ is\ congruent\ to\ 5\ mod\ 17. \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ChineseRemainderTheorem[{1, 21, 4, 7, 5}, {4, 27, 5, 11, 
+        17}]\)], "Input"],
+
+Cell[BoxData[
+    \(35229\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(\(Check\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(PowerMod[7, 35229, p]\)], "Input"],
+
+Cell[BoxData[
+    \(54321\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Macintosh",
+ScreenRectangle->{{0, 1600}, {0, 927}},
+WindowSize->{520, 740},
+WindowMargins->{{12, Automatic}, {Automatic, 24}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 71, 1, 27, "Input"],
+Cell[1828, 54, 68, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[1921, 59, 43, 1, 27, "Input"],
+Cell[1967, 62, 40, 1, 27, "Output"]
+}, Open  ]],
+Cell[2022, 66, 128, 2, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[2175, 72, 53, 1, 27, "Input"],
+Cell[2231, 75, 76, 1, 27, "Output"]
+}, Open  ]],
+Cell[2322, 79, 112, 2, 43, "Input"],
+
+Cell[CellGroupData[{
+Cell[2459, 85, 42, 1, 27, "Input"],
+Cell[2504, 88, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2576, 94, 66, 1, 27, "Input"],
+Cell[2645, 97, 40, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2722, 103, 66, 1, 27, "Input"],
+Cell[2791, 106, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2867, 112, 66, 1, 27, "Input"],
+Cell[2936, 115, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3012, 121, 67, 1, 27, "Input"],
+Cell[3082, 124, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3158, 130, 67, 1, 27, "Input"],
+Cell[3228, 133, 39, 1, 27, "Output"]
+}, Open  ]],
+Cell[3282, 137, 86, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[3393, 142, 68, 1, 27, "Input"],
+Cell[3464, 145, 39, 1, 27, "Output"]
+}, Open  ]],
+Cell[3518, 149, 26, 0, 27, "Input"],
+Cell[3547, 151, 123, 3, 43, "Input"],
+
+Cell[CellGroupData[{
+Cell[3695, 158, 42, 1, 27, "Input"],
+Cell[3740, 161, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3816, 167, 62, 1, 27, "Input"],
+Cell[3881, 170, 40, 1, 27, "Output"]
+}, Open  ]],
+Cell[3936, 174, 143, 2, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[4104, 180, 54, 1, 27, "Input"],
+Cell[4161, 183, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4237, 189, 63, 1, 27, "Input"],
+Cell[4303, 192, 35, 1, 27, "Output"]
+}, Open  ]],
+Cell[4353, 196, 72, 1, 27, "Input"],
+Cell[4428, 199, 71, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[4524, 204, 86, 1, 27, "Input"],
+Cell[4613, 207, 34, 1, 23, "Print"],
+Cell[4650, 210, 38, 1, 23, "Print"],
+Cell[4691, 213, 38, 1, 23, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4766, 219, 62, 1, 27, "Input"],
+Cell[4831, 222, 35, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4903, 228, 62, 1, 27, "Input"],
+Cell[4968, 231, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5044, 237, 56, 1, 27, "Input"],
+Cell[5103, 240, 39, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5179, 246, 64, 1, 27, "Input"],
+Cell[5246, 249, 39, 1, 27, "Output"]
+}, Open  ]],
+Cell[5300, 253, 108, 2, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[5433, 259, 86, 1, 27, "Input"],
+Cell[5522, 262, 65, 1, 27, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5624, 268, 122, 2, 43, "Input"],
+Cell[5749, 272, 34, 1, 23, "Print"]
+}, Open  ]],
+Cell[5798, 276, 68, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[5891, 281, 88, 1, 27, "Input"],
+Cell[5982, 284, 114, 2, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6133, 291, 124, 2, 43, "Input"],
+Cell[6260, 295, 34, 1, 23, "Print"]
+}, Open  ]],
+Cell[6309, 299, 69, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[6403, 304, 88, 1, 27, "Input"],
+Cell[6494, 307, 153, 2, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6684, 314, 124, 2, 43, "Input"],
+Cell[6811, 318, 34, 1, 23, "Print"]
+}, Open  ]],
+Cell[6860, 322, 72, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[6957, 327, 103, 2, 43, "Input"],
+Cell[7063, 331, 39, 1, 27, "Output"]
+}, Open  ]],
+Cell[7117, 335, 51, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[7193, 340, 54, 1, 27, "Input"],
+Cell[7250, 343, 39, 1, 27, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

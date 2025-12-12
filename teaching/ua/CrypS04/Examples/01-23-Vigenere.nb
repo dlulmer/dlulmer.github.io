@@ -1,0 +1,521 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     12402,        400]*)
+(*NotebookOutlinePosition[     13319,        428]*)
+(*  CellTagsIndexPosition[     13275,        424]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(ciphertext\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \("opkjcpcsrqtkhespzxxsjmuinieiovvryaaqaeicjnystxnemmbyzrvvvjopwxzinqjibxz\
+jdmjfsxnizvjiqidfzzymlxyeiljiqidfzzzaspwxcbnihespzxxsjmuinbnijiehjzutsvrxdvmwm\
+wkihaujharvzvgqsgfqhwtroqvsabnijycrzzgfwpzxtxuxsrkmvtxmgorxopkxwqvsaxafzmteoqu\
+roruxcmicpiirjbkwwwjyzqtavmtlopkzipeimihmzmkcvxviovvhnwlxkeiiqmxwwsewvzkmriexd\
+noirmwoiwcrhlzwdvlsfqrxdwtmgtiinmtxshfrgggwowlqhixcqsdtgmzirikedtyefirzvqreppv\
+jmwsxvijspziiwrumxizirmexcmkrrrfxzxriowvrjbkxvekiqmtmtxyihmzlchfjvbzeqoyenvuxp\
+ivrpbopwdvhjzgrsbgpjqzwqvztoqyrcxtymzkrhppadlkpmemedtgfzifropkmbxvvimzedskiibo\
+ezzlpimxepmcmognegfviiqjibxzjdmjydhrxzazswxvqnivtseimioordvvzdwawwwjyzaujqcsim\
+vuxswrvztowhiumijuprrvadvlsfqrxdwtgcrkedvkhwrklzcvhoxvadtredtvemqtmhecmxqfirgf\
+pjzkhhioxrpkvsegtgqieppvxcmzeppvpdazwogmiicsfsvzrmmjavmtlxwxvswgsilyxcxyixwsqc\
+rmygvkvofzpdboigeehzfvsgyiinkbizmjxvkuqdmceoqurcjjxvvjefhzdzlteaijjjzbyzrvvvjo\
+pwxzinithcxyimqtjcvdeoqurgitymqzcsbgsncxig"\)], "Output",
+  FontSize->18]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Use\ the\ coinc\ function\ supplied\ with\ the\ book\ to\ compute\ \
+Friedman' 
+      s\ index\ of\ coincidence\ for\ several\ shifts\ of\ the\ \
+\(\(ciphertext\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Do[Print[i, "\< \>", coinc[ciphertext, i]], {i, 25}]\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(1\[InvisibleSpace]" "\[InvisibleSpace]47\),
+      SequenceForm[ 1, " ", 47],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(2\[InvisibleSpace]" "\[InvisibleSpace]46\),
+      SequenceForm[ 2, " ", 46],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(3\[InvisibleSpace]" "\[InvisibleSpace]28\),
+      SequenceForm[ 3, " ", 28],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(4\[InvisibleSpace]" "\[InvisibleSpace]49\),
+      SequenceForm[ 4, " ", 49],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(5\[InvisibleSpace]" "\[InvisibleSpace]34\),
+      SequenceForm[ 5, " ", 34],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(6\[InvisibleSpace]" "\[InvisibleSpace]33\),
+      SequenceForm[ 6, " ", 33],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(7\[InvisibleSpace]" "\[InvisibleSpace]21\),
+      SequenceForm[ 7, " ", 21],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(8\[InvisibleSpace]" "\[InvisibleSpace]57\),
+      SequenceForm[ 8, " ", 57],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(9\[InvisibleSpace]" "\[InvisibleSpace]27\),
+      SequenceForm[ 9, " ", 27],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(10\[InvisibleSpace]" "\[InvisibleSpace]41\),
+      SequenceForm[ 10, " ", 41],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(11\[InvisibleSpace]" "\[InvisibleSpace]32\),
+      SequenceForm[ 11, " ", 32],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(12\[InvisibleSpace]" "\[InvisibleSpace]47\),
+      SequenceForm[ 12, " ", 47],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(13\[InvisibleSpace]" "\[InvisibleSpace]24\),
+      SequenceForm[ 13, " ", 24],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(14\[InvisibleSpace]" "\[InvisibleSpace]41\),
+      SequenceForm[ 14, " ", 41],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(15\[InvisibleSpace]" "\[InvisibleSpace]33\),
+      SequenceForm[ 15, " ", 33],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(16\[InvisibleSpace]" "\[InvisibleSpace]66\),
+      SequenceForm[ 16, " ", 66],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(17\[InvisibleSpace]" "\[InvisibleSpace]29\),
+      SequenceForm[ 17, " ", 29],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(18\[InvisibleSpace]" "\[InvisibleSpace]38\),
+      SequenceForm[ 18, " ", 38],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(19\[InvisibleSpace]" "\[InvisibleSpace]34\),
+      SequenceForm[ 19, " ", 34],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(20\[InvisibleSpace]" "\[InvisibleSpace]47\),
+      SequenceForm[ 20, " ", 47],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(21\[InvisibleSpace]" "\[InvisibleSpace]37\),
+      SequenceForm[ 21, " ", 37],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(22\[InvisibleSpace]" "\[InvisibleSpace]52\),
+      SequenceForm[ 22, " ", 52],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(23\[InvisibleSpace]" "\[InvisibleSpace]38\),
+      SequenceForm[ 23, " ", 38],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(24\[InvisibleSpace]" "\[InvisibleSpace]52\),
+      SequenceForm[ 24, " ", 52],
+      Editable->False]], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    InterpretationBox[\(25\[InvisibleSpace]" "\[InvisibleSpace]42\),
+      SequenceForm[ 25, " ", 42],
+      Editable->False]], "Print",
+  FontSize->18]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Shifts\ that\ are\ a\ multiple\ of\ 8\ have\ higher\ indices\ so\ we\ \
+guess\ thatthe\ key\ length\ is\ 8. \ \ Now\ look\ at\ a\ slice\ of\ the\ \
+text, \ taking\ every\ 8  th\ \(\(character\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ct1\  = \ choose[ciphertext, 8, 1]\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \("orznyjmvndzzizcznjdhzhaztvoaocjzomvnqvdiddnghgdvmpxczjqhvnpjjomddoiiioi\
+dznidzmzidddzdmxjrgcdimxixgdznvovzjvnmomn"\)], "Output",
+  FontSize->18]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Look\ at\ the\ frequencies\ of\ this\ slice . \ \ They\ should\ \
+resemble\ normal\ English\ \(\(frequencies\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(\ \)\(frequency[ct1]\)\)\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{"a", 2}, {"b", 0}, {"c", 4}, {"d", 16}, {"e", 0}, {"f", 0}, {"g", 
+        4}, {"h", 4}, {"i", 10}, {"j", 8}, {"k", 0}, {"l", 0}, {"m", 
+        9}, {"n", 10}, {"o", 9}, {"p", 2}, {"q", 2}, {"r", 2}, {"s", 
+        0}, {"t", 1}, {"u", 0}, {"v", 9}, {"w", 0}, {"x", 4}, {"y", 1}, {"z", 
+        15}}\)], "Output",
+  FontSize->18]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ most\ common\ characters\ by\ far\ are\ d\ and\ z; \ 
+    if\ one\ of\ these\ is\ e, \ 
+    then\ the\ key\ is\ z\ or\ v . \ \ z\ is\ unlikely\ because\ if\ it\ were\
+\ the\ key, \ then\ y\ would\ be\ very\ common\ in\ the\ plaintext, \ 
+    which\ is\ unlikely . \ \ So\ we\ guess\ the\ first\ letter\ of\ the\ key\
+\ is\ \(\(v\)\(.\)\)\)], "Input"],
+
+Cell[BoxData[
+    \(We\ can\ also\ use\ the\ dot\ products\ of\ the\ observed\ frequencies\ \
+of\ the\ slice\ with\ shifts\ of\ the\ frequency\ vector\ for\ normal\ \
+\(\(English\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(corr[vigvec[ciphertext, 8, 1]]\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \({0.03522321428571429`, 0.03525892857142857`, 0.03445535714285714`, 
+      0.037526785714285714`, 0.03533035714285715`, 0.03767857142857142`, 
+      0.04108928571428571`, 0.03670535714285714`, 0.043312500000000004`, 
+      0.039258928571428556`, 0.044955357142857144`, 0.037125`, 
+      0.038357142857142854`, 0.03060714285714286`, 0.03495535714285715`, 
+      0.03884821428571429`, 0.03539285714285714`, 0.04133035714285714`, 
+      0.03308928571428571`, 0.030937500000000003`, 0.03732142857142857`, 
+      0.07020535714285714`, 0.03977678571428571`, 0.02836607142857144`, 
+      0.028892857142857144`, 0.055`}\)], "Output",
+  FontSize->18]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Max[%]\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \(0.07020535714285714`\)], "Output",
+  FontSize->18]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ biggest\ dot\ product\ occurs\ for\ a\ shift\ of\ 21, \ 
+    which\ again\ says\ the\ first\ letter\ of\ the\ key\ is\ \
+\(\(v\)\(.\)\)\)], "Input"],
+
+Cell[BoxData[""], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \(Define\ a\ function\ to\ do\ this\ \(\(automatically\)\(:\)\)\)], \
+"Input"],
+
+Cell[BoxData[
+    \(key[i_]\  := \ 
+      Position[corr[vigvec[ciphertext, 8, i]], 
+          Max[corr[vigvec[ciphertext, 8, i]]]] - 1\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \(And\ use\ it\ to\ find\ the\ full\ \(\(key\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(Do[Print[key[i]], {i, 8}]\)\(\[IndentingNewLine]\)
+    \)\)], "Input",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{21}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{8}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{6}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{4}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{14}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{4}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{17}}\)], "Print",
+  FontSize->18],
+
+Cell[BoxData[
+    \({{4}}\)], "Print",
+  FontSize->18]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ key\ is\ "\<vigenere\>"\ and\ the\ plaintext\ \(\(is\)\(:\)\)\)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vigenere[ciphertext, \(-{21, 8, 6, 4, 14, 4, 17, 4}\)]\)], "Input"],
+
+Cell[BoxData[
+    \("thefollowingtableprovidesayearendsummaryofsoftwarevulnerabilitiesidenti\
+fiedbetweendecembersixthanddecembertwelfththetableprovidesthevendoroperatingsy\
+stemsoftwarenamecommonnameofthevulnerabilitypotentialriskatthetimeofpublicatio\
+nandthecybernotesissueinwhichthevulnerabilityappearedsoftwareversionsareidenti\
+fiedifknownthisinformationispresentedonlyasasummarycompletedetailsareavailable\
+fromthesourceindicatedintheendnotepleasenotethatevenifthemethodofattackhasnotb\
+eenutilizedoranexploitscriptisnotcurrentlywidelyavailableontheinternetapotenti\
+alvulnerabilityhasbeenidentifiedupdatestoitemsappearinginpreviousissuesofcyber\
+notesarelistedinboldnewinformationcontainedintheupdatewillappearinitalicizedco\
+loredtextwhereapplicablethetablelistsacvenumberinredwhichcorrespondstothecommo\
+nvulnerabilitiesandexposurescvelistacompilationofstandardizednamesforvulnerabi\
+litiesandotherinformationsecurityexposures"\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for X",
+ScreenRectangle->{{0, 1600}, {0, 1024}},
+WindowSize->{520, 644},
+WindowMargins->{{266, Automatic}, {Automatic, 103}},
+PrintingPageRange->{Automatic, Automatic},
+PrintingOptions->{"PaperSize"->{612, 792},
+"PaperOrientation"->"Portrait",
+"PostScriptOutputFile":>FrontEnd`FileName[{$RootDirectory, "home", "u25", \
+"ulmer"}, "VigenereExample.nb.ps", CharacterEncoding -> "iso8859-1"],
+"Magnification"->1}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 59, 2, 32, "Input"],
+Cell[1838, 57, 967, 13, 653, "Output"]
+}, Open  ]],
+Cell[2820, 73, 202, 4, 59, "Input"],
+
+Cell[CellGroupData[{
+Cell[3047, 81, 101, 2, 55, "Input"],
+Cell[3151, 85, 164, 4, 28, "Print"],
+Cell[3318, 91, 164, 4, 28, "Print"],
+Cell[3485, 97, 164, 4, 28, "Print"],
+Cell[3652, 103, 164, 4, 28, "Print"],
+Cell[3819, 109, 164, 4, 28, "Print"],
+Cell[3986, 115, 164, 4, 28, "Print"],
+Cell[4153, 121, 164, 4, 28, "Print"],
+Cell[4320, 127, 164, 4, 28, "Print"],
+Cell[4487, 133, 164, 4, 28, "Print"],
+Cell[4654, 139, 166, 4, 28, "Print"],
+Cell[4823, 145, 166, 4, 28, "Print"],
+Cell[4992, 151, 166, 4, 28, "Print"],
+Cell[5161, 157, 166, 4, 28, "Print"],
+Cell[5330, 163, 166, 4, 28, "Print"],
+Cell[5499, 169, 166, 4, 28, "Print"],
+Cell[5668, 175, 166, 4, 28, "Print"],
+Cell[5837, 181, 166, 4, 28, "Print"],
+Cell[6006, 187, 166, 4, 28, "Print"],
+Cell[6175, 193, 166, 4, 28, "Print"],
+Cell[6344, 199, 166, 4, 28, "Print"],
+Cell[6513, 205, 166, 4, 28, "Print"],
+Cell[6682, 211, 166, 4, 28, "Print"],
+Cell[6851, 217, 166, 4, 28, "Print"],
+Cell[7020, 223, 166, 4, 28, "Print"],
+Cell[7189, 229, 166, 4, 28, "Print"]
+}, Open  ]],
+Cell[7370, 236, 233, 3, 59, "Input"],
+
+Cell[CellGroupData[{
+Cell[7628, 243, 83, 2, 32, "Input"],
+Cell[7714, 247, 166, 3, 101, "Output"]
+}, Open  ]],
+Cell[7895, 253, 150, 2, 43, "Input"],
+
+Cell[CellGroupData[{
+Cell[8070, 259, 77, 2, 32, "Input"],
+Cell[8150, 263, 350, 6, 170, "Output"]
+}, Open  ]],
+Cell[8515, 272, 375, 6, 107, "Input"],
+Cell[8893, 280, 200, 3, 59, "Input"],
+
+Cell[CellGroupData[{
+Cell[9118, 287, 79, 2, 32, "Input"],
+Cell[9200, 291, 660, 10, 216, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9897, 306, 55, 2, 32, "Input"],
+Cell[9955, 310, 70, 2, 32, "Output"]
+}, Open  ]],
+Cell[10040, 315, 173, 3, 43, "Input"],
+Cell[10216, 320, 42, 1, 32, "Input"],
+Cell[10261, 323, 96, 2, 27, "Input"],
+Cell[10360, 327, 163, 4, 124, "Input"],
+Cell[10526, 333, 84, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[10635, 338, 110, 3, 55, "Input"],
+Cell[10748, 343, 55, 2, 28, "Print"],
+Cell[10806, 347, 54, 2, 28, "Print"],
+Cell[10863, 351, 54, 2, 28, "Print"],
+Cell[10920, 355, 54, 2, 28, "Print"],
+Cell[10977, 359, 55, 2, 28, "Print"],
+Cell[11035, 363, 54, 2, 28, "Print"],
+Cell[11092, 367, 55, 2, 28, "Print"],
+Cell[11150, 371, 54, 2, 28, "Print"]
+}, Open  ]],
+Cell[11219, 376, 101, 2, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[11345, 382, 87, 1, 27, "Input"],
+Cell[11435, 385, 951, 12, 283, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

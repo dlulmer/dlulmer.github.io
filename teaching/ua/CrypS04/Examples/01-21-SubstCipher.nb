@@ -1,0 +1,361 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     11169,        272]*)
+(*NotebookOutlinePosition[     11800,        294]*)
+(*  CellTagsIndexPosition[     11756,        290]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[{
+    \(\(alphabet0 = "\<ABCDEFGHIJKLMNOPQRSTUVWXYZ\>";\)\n\), "\
+\[IndentingNewLine]", 
+    \(\(frequency[
+          txt_] := \ \((FT\  = 
+            Array[Function[
+                i, {\(Characters[alphabet0]\)[\([i]\)], 
+                  Count[Characters[
+                      txt], \(Characters[alphabet0]\)[\([i]\)]]}], 
+              26]; \[IndentingNewLine]FT\  = \ 
+            Transpose[FT]; \[IndentingNewLine]FT\  = \ 
+            Transpose[{FT[\([2]\)]/N[Apply[Plus, FT[\([2]\)]]], \ 
+                FT[\([1]\)]}]; \[IndentingNewLine]Reverse[
+            Sort[FT]])\);\)\[IndentingNewLine]\), "\[IndentingNewLine]", 
+    \(\(SubstCipher[key_, text_]\  := \ 
+        StringReplace[text, 
+          Table[StringTake[alphabet0, {i}]\  -> \ StringTake[key, {i}], {i, 
+              1, 26}]];\)\), "\[IndentingNewLine]", 
+    \(\)}], "Input"],
+
+Cell[BoxData[
+    \(\(CipherText\  = \ "\<KRJ NJZKQCY GZKJYYGFJZNJ CFJZNV DCO NQJCKJM GZ \
+IGIKV IGBJ VJCQO CFT DGKR KRJ OGFZGZF TI KRJ ZCKGTZCY OJNUQGKV CNK AV \
+HQJOGMJZK KQUPCZ KRJ ZCKGTZCY OJNUQGKV CNK NRCQFJM KRJ MGQJNKTQ TI NJZKQCY \
+GZKJYYGFJZNJ DGKR NTTQMGZCKGZF ZCKGTZCY GZKJYYGFJZNJ CNKGBGKGJO CZM \
+NTQQJYCKGZF JBCYUCKGZF CZM MGOOJPGZCKGZF GZKJYYGFJZNJ DRGNR CIIJNKO ZCKGTZCY \
+OJNUQGKV KRJ NGC GO CZ GZMJHJZMJZK CFJZNV QJOHTZOGAYJ KT KRJ HQJOGMJZK CZM \
+CNNTUZKCAYJ KT KRJ CPJQGNCZ HJTHYJ KRQTUFR KRJ GZKJYYGFJZNJ TBJQOGFRK \
+NTPPGKKJJO TI KRJ UO NTZFQJOO\>";\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(frequency[CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \({{0.13636363636363635`, "J"}, {0.11136363636363636`, 
+        "K"}, {0.10227272727272727`, "Z"}, {0.10227272727272727`, 
+        "G"}, {0.08181818181818182`, "C"}, {0.06363636363636363`, 
+        "N"}, {0.04772727272727272`, "Y"}, {0.04772727272727272`, 
+        "T"}, {0.04772727272727272`, "Q"}, {0.045454545454545456`, 
+        "O"}, {0.04090909090909091`, "R"}, {0.04090909090909091`, 
+        "F"}, {0.02727272727272727`, "M"}, {0.01818181818181818`, 
+        "V"}, {0.01818181818181818`, "U"}, {0.01818181818181818`, 
+        "I"}, {0.013636363636363636`, "H"}, {0.011363636363636364`, 
+        "P"}, {0.00909090909090909`, "D"}, {0.00909090909090909`, 
+        "B"}, {0.006818181818181818`, "A"}, {0, "X"}, {0, "W"}, {0, "S"}, {0, 
+        "L"}, {0, "E"}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Guess\ from\ frequencies\ that\ J\ is\ \(\(e\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<ABCDEFGHIeKLMNOPQRSTUVWXYZ\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("KRe NeZKQCY GZKeYYGFeZNe CFeZNV DCO NQeCKeM GZ IGIKV IGBe VeCQO CFT \
+DGKR KRe OGFZGZF TI KRe ZCKGTZCY OeNUQGKV CNK AV HQeOGMeZK KQUPCZ KRe \
+ZCKGTZCY OeNUQGKV CNK NRCQFeM KRe MGQeNKTQ TI NeZKQCY GZKeYYGFeZNe DGKR \
+NTTQMGZCKGZF ZCKGTZCY GZKeYYGFeZNe CNKGBGKGeO CZM NTQQeYCKGZF eBCYUCKGZF CZM \
+MGOOePGZCKGZF GZKeYYGFeZNe DRGNR CIIeNKO ZCKGTZCY OeNUQGKV KRe NGC GO CZ \
+GZMeHeZMeZK CFeZNV QeOHTZOGAYe KT KRe HQeOGMeZK CZM CNNTUZKCAYe KT KRe \
+CPeQGNCZ HeTHYe KRQTUFR KRe GZKeYYGFeZNe TBeQOGFRK NTPPGKKeeO TI KRe UO \
+NTZFQeOO"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Now\ guess\ that\ K\ is\ \(\(t\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(SubstCipher["\<ABCDEFGHIetLMNOPQRSTUVWXYZ\>", 
+      CipherText]\)\(\[IndentingNewLine]\)
+    \)\)], "Input"],
+
+Cell[BoxData[
+    \("tRe NeZtQCY GZteYYGFeZNe CFeZNV DCO NQeCteM GZ IGItV IGBe VeCQO CFT \
+DGtR tRe OGFZGZF TI tRe ZCtGTZCY OeNUQGtV CNt AV HQeOGMeZt tQUPCZ tRe \
+ZCtGTZCY OeNUQGtV CNt NRCQFeM tRe MGQeNtTQ TI NeZtQCY GZteYYGFeZNe DGtR \
+NTTQMGZCtGZF ZCtGTZCY GZteYYGFeZNe CNtGBGtGeO CZM NTQQeYCtGZF eBCYUCtGZF CZM \
+MGOOePGZCtGZF GZteYYGFeZNe DRGNR CIIeNtO ZCtGTZCY OeNUQGtV tRe NGC GO CZ \
+GZMeHeZMeZt CFeZNV QeOHTZOGAYe tT tRe HQeOGMeZt CZM CNNTUZtCAYe tT tRe \
+CPeQGNCZ HeTHYe tRQTUFR tRe GZteYYGFeZNe TBeQOGFRt NTPPGtteeO TI tRe UO \
+NTZFQeOO"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ first\ word\ \((tRe)\)\ suggests\ that\ R\ is\ \(\(h\)\(:\)\)\)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<ABCDEFGHIetLMNOPQhSTUVWXYZ\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("the NeZtQCY GZteYYGFeZNe CFeZNV DCO NQeCteM GZ IGItV IGBe VeCQO CFT \
+DGth the OGFZGZF TI the ZCtGTZCY OeNUQGtV CNt AV HQeOGMeZt tQUPCZ the \
+ZCtGTZCY OeNUQGtV CNt NhCQFeM the MGQeNtTQ TI NeZtQCY GZteYYGFeZNe DGth \
+NTTQMGZCtGZF ZCtGTZCY GZteYYGFeZNe CNtGBGtGeO CZM NTQQeYCtGZF eBCYUCtGZF CZM \
+MGOOePGZCtGZF GZteYYGFeZNe DhGNh CIIeNtO ZCtGTZCY OeNUQGtV the NGC GO CZ \
+GZMeHeZMeZt CFeZNV QeOHTZOGAYe tT the HQeOGMeZt CZM CNNTUZtCAYe tT the \
+CPeQGNCZ HeTHYe thQTUFh the GZteYYGFeZNe TBeQOGFht NTPPGtteeO TI the UO \
+NTZFQeOO"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ word\ tT\ suggests\ that\ T\ is\ \(\(o\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<ABCDEFGHIetLMNOPQhSoUVWXYZ\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("the NeZtQCY GZteYYGFeZNe CFeZNV DCO NQeCteM GZ IGItV IGBe VeCQO CFo \
+DGth the OGFZGZF oI the ZCtGoZCY OeNUQGtV CNt AV HQeOGMeZt tQUPCZ the \
+ZCtGoZCY OeNUQGtV CNt NhCQFeM the MGQeNtoQ oI NeZtQCY GZteYYGFeZNe DGth \
+NooQMGZCtGZF ZCtGoZCY GZteYYGFeZNe CNtGBGtGeO CZM NoQQeYCtGZF eBCYUCtGZF CZM \
+MGOOePGZCtGZF GZteYYGFeZNe DhGNh CIIeNtO ZCtGoZCY OeNUQGtV the NGC GO CZ \
+GZMeHeZMeZt CFeZNV QeOHoZOGAYe to the HQeOGMeZt CZM CNNoUZtCAYe to the \
+CPeQGNCZ HeoHYe thQoUFh the GZteYYGFeZNe oBeQOGFht NoPPGtteeO oI the UO \
+NoZFQeOO"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ word\ oI\ suggests\ that\ I\ is\ f\ or\ n\ or\ r . \ \ I\ has\ low\
+\ frequency\ and\ n\ and\ r\ are\ common, \ 
+    so\ guess\ that\ I\ is\ \(\(f\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<ABCDEFGHfetLMNOPQhSoUVWXYZ\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("the NeZtQCY GZteYYGFeZNe CFeZNV DCO NQeCteM GZ fGftV fGBe VeCQO CFo \
+DGth the OGFZGZF of the ZCtGoZCY OeNUQGtV CNt AV HQeOGMeZt tQUPCZ the \
+ZCtGoZCY OeNUQGtV CNt NhCQFeM the MGQeNtoQ of NeZtQCY GZteYYGFeZNe DGth \
+NooQMGZCtGZF ZCtGoZCY GZteYYGFeZNe CNtGBGtGeO CZM NoQQeYCtGZF eBCYUCtGZF CZM \
+MGOOePGZCtGZF GZteYYGFeZNe DhGNh CffeNtO ZCtGoZCY OeNUQGtV the NGC GO CZ \
+GZMeHeZMeZt CFeZNV QeOHoZOGAYe to the HQeOGMeZt CZM CNNoUZtCAYe to the \
+CPeQGNCZ HeoHYe thQoUFh the GZteYYGFeZNe oBeQOGFht NoPPGtteeO of the UO \
+NoZFQeOO"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(There\ are\ several\ 2 - 
+      letter\ words\ \((GZ\ AV\ GO\ CZ)\)\ not\ involving\ e, \ o, \ t, \ 
+    or\ f . \ \ This\ suggests\ G\ is\ i\ and\ C\ is\ \(\(a\)\(:\)\)\)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<ABaDEFiHfetLMNOPQhSoUVWXYZ\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("the NeZtQaY iZteYYiFeZNe aFeZNV DaO NQeateM iZ fiftV fiBe VeaQO aFo \
+Dith the OiFZiZF of the ZatioZaY OeNUQitV aNt AV HQeOiMeZt tQUPaZ the \
+ZatioZaY OeNUQitV aNt NhaQFeM the MiQeNtoQ of NeZtQaY iZteYYiFeZNe Dith \
+NooQMiZatiZF ZatioZaY iZteYYiFeZNe aNtiBitieO aZM NoQQeYatiZF eBaYUatiZF aZM \
+MiOOePiZatiZF iZteYYiFeZNe DhiNh affeNtO ZatioZaY OeNUQitV the Nia iO aZ \
+iZMeHeZMeZt aFeZNV QeOHoZOiAYe to the HQeOiMeZt aZM aNNoUZtaAYe to the \
+aPeQiNaZ HeoHYe thQoUFh the iZteYYiFeZNe oBeQOiFht NoPPitteeO of the UO \
+NoZFQeOO"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Now\ fiftV\ suggests\ V\ is\ y, \ \[IndentingNewLine]fiBe\ suggests\ B\ \
+is\ v, \ \[IndentingNewLine]Dith\ suggests\ that\ D\ is\ w, \ 
+    ZatioZaY\ suggests\ that\ Z\ is\ n\ and\ Y\ is\ l, \ 
+    and\ NoPPitteeO\ suggests\ N\ is\ c\ \ P\ is\ m\ and\ O\ is\ \(\(s\)\(:\)\
+\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<AvawEFiHfetLMcsmQhSoUyWXln\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("the centQal intelliFence aFency was cQeateM in fifty five yeaQs aFo \
+with the siFninF of the national secUQity act Ay HQesiMent tQUman the \
+national secUQity act chaQFeM the MiQectoQ of centQal intelliFence with \
+cooQMinatinF national intelliFence activities anM coQQelatinF evalUatinF anM \
+MisseminatinF intelliFence which affects national secUQity the cia is an \
+inMeHenMent aFency QesHonsiAle to the HQesiMent anM accoUntaAle to the \
+ameQican HeoHle thQoUFh the intelliFence oveQsiFht committees of the Us \
+conFQess"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(The\ rest\ is\ \(clear : \ Q\ is\ r\), \ F\ is\ g, \ M\ is\ d, \ 
+    U\ is\ u, \ A\ is\ b, \ H\ is\ \(\(p\)\(:\)\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SubstCipher["\<bvawEgipfetLdcsmrhSouyWXln\>", CipherText]\)], "Input"],
+
+Cell[BoxData[
+    \("the central intelligence agency was created in fifty five years ago \
+with the signing of the national security act by president truman the \
+national security act charged the director of central intelligence with \
+coordinating national intelligence activities and correlating evaluating and \
+disseminating intelligence which affects national security the cia is an \
+independent agency responsible to the president and accountable to the \
+american people through the intelligence oversight committees of the us \
+congress"\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Note\ that\ the\ actual\ frequecies\ in\ this\ message\ do\ not\ come\ \
+in\ the\ same\ order\ as\ the\ frequencies\ in\ "\<normal\>"\ English\ text . \
+\ We\ had\ to\ use\ digrams\ ad\ short\ words\ to\ break\ the\ \
+\(\(cipher\)\(.\)\)\)], "Input"]
+},
+FrontEndVersion->"5.0 for X",
+ScreenRectangle->{{0, 1600}, {0, 1024}},
+WindowSize->{520, 644},
+WindowMargins->{{156, Automatic}, {Automatic, 56}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 866, 18, 283, "Input"],
+Cell[2623, 71, 586, 8, 203, "Input"],
+
+Cell[CellGroupData[{
+Cell[3234, 83, 54, 1, 27, "Input"],
+Cell[3291, 86, 796, 12, 139, "Output"]
+}, Open  ]],
+Cell[4102, 101, 86, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[4213, 106, 90, 1, 27, "Input"],
+Cell[4306, 109, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[4882, 120, 72, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[4979, 125, 133, 3, 43, "Input"],
+Cell[5115, 130, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[5691, 141, 101, 2, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[5817, 147, 90, 1, 27, "Input"],
+Cell[5910, 150, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[6486, 161, 85, 1, 27, "Input"],
+
+Cell[CellGroupData[{
+Cell[6596, 166, 90, 1, 27, "Input"],
+Cell[6689, 169, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[7265, 180, 193, 3, 59, "Input"],
+
+Cell[CellGroupData[{
+Cell[7483, 187, 90, 1, 27, "Input"],
+Cell[7576, 190, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[8152, 201, 204, 4, 59, "Input"],
+
+Cell[CellGroupData[{
+Cell[8381, 209, 90, 1, 27, "Input"],
+Cell[8474, 212, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[9050, 223, 309, 5, 91, "Input"],
+
+Cell[CellGroupData[{
+Cell[9384, 232, 90, 1, 27, "Input"],
+Cell[9477, 235, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[10053, 246, 148, 2, 43, "Input"],
+
+Cell[CellGroupData[{
+Cell[10226, 252, 90, 1, 27, "Input"],
+Cell[10319, 255, 561, 8, 171, "Output"]
+}, Open  ]],
+Cell[10895, 266, 270, 4, 75, "Input"]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
