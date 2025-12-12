@@ -1,0 +1,28 @@
+                           EXAM 3
+                        REVIEW TOPICS
+
+Calculating the mean and standard deviation for a finite random variable
+
+Density curves and probabilities for continuous random variables
+Graphical interpretation/calculation of mean, median, and quartiles for a 
+     continuous random variable
+
+Normal distributions and the 68-99-99.7 rule
+Standardizing and the standard normal distribution
+Using a standard normal table to compute probabilities and critical values
+
+The law of large numbers
+Sampling distribution for the sample mean; its mean and standard deviation
+The central limit theorem (with rule of thumb)
+
+The binomial setting and binomial distributions
+Probability, mean, and standard deviation for binomial random variables
+The normal approximation to binomial (with rule of thumb)
+
+Statistical confidence
+Confidence intervals: calculation and interpretation
+Effect of confidence level, sample size, and standard deviation  
+     on the margin of error
+Finding the sample size for a given margin of error, confidence level,
+     and standard deviation
+Caveats about confidence intervals

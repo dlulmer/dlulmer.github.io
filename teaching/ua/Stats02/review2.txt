@@ -1,0 +1,44 @@
+                           EXAM 2
+                        REVIEW TOPICS
+
+
+observational studies vs. experiments
+population vs. sample
+parameters vs. statistics
+
+sample designs:
+       voluntary response, convenience, simple random sample,
+       stratified random sample, multistage sample
+sample bias, undercoverage, non-response
+response bias and wording effects
+
+experimental units/subjects, factors, treatments
+placebo effect, control group
+experimental designs:
+	comparative, randomized comparative, completely randomized,
+	double blind, matched pair, block
+principles: control, randomization, replication
+statistical significance
+
+randomness and probability
+outcomes, the sample space, events
+probability models
+rules for a probability model
+assigning probabilities for finite and continuous sample spaces
+disjointness and independence
+random variables and their probability distributions
+
+disjointness and the addition rule
+the general addition rule
+Venn diagrams
+
+independence and the multiplication rule
+conditional probability 
+the general multiplication rule
+calculating and interpreting conditional probabilities
+
+
+
+
+
+

@@ -1,0 +1,212 @@
+\documentclass{article}
+\setlength{\topmargin}{-.25in}
+%\setlength{\textheight}{9in}
+\setlength{\evensidemargin}{-.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\textwidth}{6.5in}
+
+\begin{document}
+\title{Math 160/263 Minitab Assignment \#1 - Unix Version} 
+\author{Chapter 0 - Introduction to Minitab}
+\date{Worksheet Name - data1.MTW}
+\maketitle
+
+\noindent
+{\em  The purpose of this assignment is to introduce you to the 
+statistical software package, Minitab.  You will learn how to enter, edit, 
+and view data as well as open and save files.}
+
+\begin{enumerate}
+
+\item  To start Minitab, type {\tt minitab} at the $>$ prompt.  When you 
+see the MTB $>$ prompt, you are in Minitab.  
+At this prompt type,
+\begin{center}
+{\bf OUTFile} '{\em filename}'
+\end{center}
+to open an {\em outfile}.  (Note that the filename must be in single 
+quotes and should not contain any periods or other special characters, 
+spaces, or extensions.)
+
+\vspace{.1in}
+
+There are two critical commands in Minitab.  Failure to use either one of
+these commands may unfortunately result in the loss of your work.  The
+{\bf OUTFile} command is the first ``critical'' command.
+
+\item  Use the {\bf RETRieve} command to load the {\em worksheet} 
+that contains the data for this assignment.  NOTE:  This and all future 
+worksheets will be in /xdisk/mendel.  This path name must be entered before  
+the name of the worksheet.  For example, you would use 
+/xdisk/mendel/data1.MTW to specify the worksheet for this assignment.
+
+\item  Use the {\bf INFOrmation} command to list the contents of the 
+{\em worksheet} and the {\bf PRINt} command to display the data.
+
+\item  The data for the textbook used in Math 160 was omitted from the 
+{\em worksheet}.  Use the {\bf INSErt} command to append columns 1 through 
+3 with the data given below.
+
+\begin{center}
+\begin{tabular}{cll}
+
+Textbook                              & Author & Price \\
+\hline
+The Basic Practice of Statistics, 2/E & Moore  & 77.75  
+
+\end{tabular}
+\end{center}
+
+\item  Use the {\bf PRINt} command to display the revised data.
+
+\pagebreak
+
+In order to conduct a thorough analysis of the prices of these books, it 
+would be desirable to know the length of each book.  This information is 
+given below.
+
+\begin{center}
+\begin{tabular}{lc}
+
+\multicolumn{1}{c}{Textbook}                       & Pages \\
+\hline
+A Brief Introduction to Probability and Statistics & 640 \\
+Elementary Statistics, 5/E                         & 864 \\
+Elementary Statistics, 8/E                         & 800 \\
+Elementary Statistics: Picturing the World, 2/E    & 704 \\
+Exploring Statistics, 2/E                          & 940 \\
+First Course in Statistics, A, 8/E                 & 576 \\
+Introduction to Statistics                         & 752 \\
+Introduction to the Practice of Statistics, 3/E    & 828 \\
+Introductory Statistics, 4/E                       & 880 \\
+Introductory Statistics, 6/E                       & 984 \\
+Learning Statistics with Real Data                 & 300 \\
+Mind on Statistics                                 & 592 \\
+Statistics, 9/E                                    & 880 \\
+The Basic Practice of Statistics, 2/E              & 619
+
+\end{tabular}
+\end{center}
+
+\item  Use the {\bf NAME} command to assign the name 'Pages' to column 4, and 
+use the {\bf SET} command to input the number of pages for each book.
+
+\item  Use the {\bf INFOrmation} and {\bf PRINt} commands to verify that 
+the number of pages for each book has been added to the {\em worksheet}.
+
+\item  Now suppose that you would like to compute the price per page.
+Use the {\bf HELP} command to obtain instructions for 
+the use of the {\bf LET} command, the use the {\bf LET} command to do 
+the desired computation.  (Store the results in column 5.)
+
+\item  Use the {\bf PRINt} command to view the results of the above 
+computation.
+
+\item  After noticing that {\em Learning Statistics With Real Data} is 
+the only paperback in the list, you decide to remove that book from the 
+data set.
+
+\begin{enumerate}
+
+\item  Since it is always wise to leave the original data set intact, 
+use the {\bf COPY} command to copy columns 1 through 5 to columns 6 
+through 10.
+
+\item  Now use the {\bf DELEte} command to remove row 11 from columns 
+6 through 10.
+
+\item  Use the {\bf INFO} and {\bf PRINt} commands to view the reduced data 
+set.
+
+\end{enumerate}
+
+\item  You are now ready to exit Minitab, but before doing so you need to save 
+your {\em worksheet}.  
+
+At the MTB $>$ prompt, type 
+\begin{center}
+{\bf SAVE} 'filename'
+\end{center}
+to save your {\em worksheet}.  Again, be sure that your filename is 
+enclosed in single quotes and contains no periods or other special 
+characters, spaces, or file extensions.  The {\bf SAVE} command is the 
+second ``critical'' Minitab command.
+
+To exit Minitab, type {\bf STOP} at the MTB $>$ prompt.
+
+\pagebreak
+
+\item  Suppose that you forgot to answer a portion of your assignment.  The 
+following exercises will lead you through the process of restarting Minitab 
+and opening both your {\em outfile} and your {\em worksheet}.
+
+\begin{enumerate}
+
+\item  At the $>$ prompt, type {\bf minitab}.
+
+\item  At the MTB $>$ prompt, use the {\bf OUTFile} command to open your 
+{\em outfile}.
+
+\item  Next use the {\bf RETRieve} command to load your {\em worksheet}.
+
+\item  Use the {\bf INFOrmation} and {\bf PRINt} commands to ensure that you 
+have loaded the correct {\em worksheet}.
+
+\item  Since you haven't made any changes to the data, it is not necessary 
+to {\bf SAVE} the {\em worksheet} again.  Simply use the {\bf STOP} command 
+to exit Minitab.
+
+\end{enumerate}
+
+
+\item  You will need to use a word processor to complete the assignment.  
+The following exercises will lead you through the process of downloading 
+the {\em outfile}, opening it in Microsoft Word, editing the word 
+document.
+
+\begin{enumerate}
+
+\item  Click on {\bf Window \boldmath $>$ \unboldmath New File Transfer}.
+
+\item  Click once on the name of the {\em outfile}, then
+click on {\bf Operation \boldmath $>$ \unboldmath Download}.
+
+\item  Select the folder to which you would like to download the file,
+then press {\em Enter}.
+
+\item  Click on {\bf Window \boldmath $>$ \unboldmath Close} to close the
+file transfer window.
+
+\item  Type \ {\bf {\tt exit}} \ at the system prompt
+\boldmath ($>$), \unboldmath and press {\em Enter}.
+
+\item  Click on {\bf File \boldmath $>$ \unboldmath Exit} to close the SSH
+Secure Shell Client.
+
+\item  Open Microsoft Word.
+
+\item  Click on {\bf File \boldmath $>$ \unboldmath Open} to import 
+the {\em outfile}.
+
+\item  Select the appropriate folder and click twice on the name of 
+the {\em outfile}.  (If the {\em outfile} is not displayed, then 
+change the file type to All.)
+
+\item  Select {\bf Plain Text} and click on {\em OK}.
+
+\item  Insert your name, course number, and section number at the top of 
+the document, and delete any errors made during the Minitab session.
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+

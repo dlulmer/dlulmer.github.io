@@ -1,0 +1,76 @@
+\documentclass{article}
+%\setlength{\topmargin}{-1in}
+\setlength{\textheight}{9in}
+\setlength{\evensidemargin}{-.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\textwidth}{6.5in}
+
+\begin{document}
+\title{Math 160/263 Minitab Assignment \# 8 - Unix Version} 
+\author{Chapter 4 - Sampling Distributions}
+\date{}
+\maketitle
+
+\begin {enumerate}
+
+\item  A snack-food company uses a machine to package bags of pretzels.  
+The bags are supposed to contain 454 grams (g).  In fact, the contents 
+vary according to a normal distribution with mean $\mu=454$ g and standard 
+deviation $7.5$ g.
+
+\begin{enumerate}
+
+\item  Use the {\bf CDF} command with the {\bf NORMal} subcommand to find 
+the probability that an individual bag contains less than 445 g.
+
+\item  Use the {\bf LET} command to find the mean and standard deviation 
+for the contents of the bags in a carton of eight.  Use the {\bf CDF} command 
+to find the probability that the mean contents of the bags in a carton of 
+eight is less than 445 g.
+
+\end{enumerate}
+
+
+\item  A survey by the National Fisheries Institute showed that 25\% of 
+adults comsume seafood two or three times a week.
+If 100 adults are selected at random, then the count of respondents 
+that consume seafood two or three times a week 
+has a binomial distribution with parameters $n=100$ and $p=0.25$.
+
+\begin{enumerate}
+
+\item  Use the commands given below to simulate 100 observations of this 
+random variable in each of 40 columns of the worksheet.
+
+\begin{verbatim}
+
+     MTB > RANDom 100 c1-c40;
+     SUBC> BINOmial 100 0.25.
+
+\end{verbatim}
+
+\item  Use the commands given below to compute the row means for the 
+first 10 columns, the first 20 columns, and all 40 columns.
+
+\begin{verbatim}
+
+     MTB > RMEAN c1-c10 c41
+     MTB > RMEAN c1-c20 c42
+     MTB > RMEAN c1-c40 c43
+
+\end{verbatim}
+
+\item  Create graphical and numerical descriptions of the results in 
+columns 1, 41, 42, and 43.
+
+\item  Briefly describe how the shapes of the distributions compare 
+with one another, how the means compare with one another, and 
+how the standard deviations compare with one another.
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}
+

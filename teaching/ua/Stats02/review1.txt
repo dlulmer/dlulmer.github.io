@@ -1,0 +1,28 @@
+			    EXAM 1
+			REVIEW TOPICS
+
+Describing data:
+    Categorical and quantitative variables
+    Distributions
+    Symmetry and skewness, shape, center, and spread, outliers
+    Bar graphs, pie charts, histograms, stemplots, and time plots
+    When to use each one
+
+    Mean, median, quartiles
+    Five-number summary and boxplots
+    Mean, standard deviation, variance
+    Choosing appropriate measures of center and spread
+    Resistance to outliers
+
+Describing relationships
+    Response and explanatory variables
+    Scatterplots
+    Relationships: form, direction, strength
+    Correlation coefficient and regression line
+    Interpretation and use of least squares line
+    Residuals and the residual plot
+    Outliers and influential observations
+    Caveats about correlation and regression
+
+    Categorical data: two-way tables, marginal distributions, conditional 
+        distributions, Simpson's paradox

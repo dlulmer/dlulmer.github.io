@@ -1,0 +1,69 @@
+This is pdfTeX, Version 3.14159-1.00b-pretest-20020211 (Web2C 7.3.7) (format=pdflatex 2002.4.1)  2 OCT 2002 17:22
+**mtb5U.tex
+(./mtb5U.tex{/usr/local/teTeX/share/texmf.local/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, d
+utch, nohyphenation, loaded.
+(/usr/local/teTeX/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/local/teTeX/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+No file mtb5U.aux.
+\openout1 = `mtb5U.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 21.
+[1
+
+{/usr/local/teTeX/share/texmf/dvips/config/pdftex.map}{/usr/local/teTeX/share/t
+exmf.os/dvips/config/Ttbbold.map}{/usr/local/teTeX/share/texmf.os/dvips/config/
+wolfram.map}] (./mtb5U.aux) ) 
+Here is how much of TeX's memory you used:
+ 230 strings out of 30382
+ 2421 string characters out of 438882
+ 48549 words of memory out of 1000001
+ 3302 multiletter control sequences out of 10000+30000
+ 6983 words of font info for 25 fonts, out of 400000 for 1000
+ 54 hyphenation exceptions out of 1000
+ 23i,7n,17p,142b,209s stack positions out of 300i,100n,500p,50000b,4000s
+ 16 PDF objects out of 65536
+ 0 named destinations out of 20000
+ 0 words of extra memory for PDF output out of 65536
+</usr/local/teTeX/share/texmf/fonts/type1/bluesky/
+cm/cmbx10.pfb></usr/local/teTeX/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></
+usr/local/teTeX/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/local/teTeX/
+share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on mtb5U.pdf (1 page, 34080 bytes).

@@ -1,0 +1,28 @@
+			 ADDITIONAL
+			REVIEW TOPICS
+
+One sample z and t procedures for means:
+    Assumptions and caveats
+    Confidence intervals
+	Procedures
+	How interval varies with confidence level, sample size, std dev
+	Finding sample size for a given margin of error, conf level, std dev
+    Significance tests (one and two-sided)
+	Procedures
+        Reasoning and vocabulary of significance tests
+        Using them.  E.g., choosing appropriate significance levels
+	Practical vs statistical significance
+    Relationship between significance tests and confidence intervals
+    When to use z vs when to use t
+
+Matched pair procedures
+Two sample procedures (with two options for df)
+
+All of the above for proportions
+
+The problem of multiple comparisons
+
+Inference for 2-way tables:
+    counts, expected counts, the chi-squared statistic, df
+    Assumption for the chi-squared test
+    Use of the chi-squared test

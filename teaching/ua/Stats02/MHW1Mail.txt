@@ -1,0 +1,77 @@
+Dear students,
+
+It turns out that the person who wrote this assignment was not very careful
+and so you need more information than is given to do part 4 of the Unix
+version.   Because of this, I am making this assignment due Wednesday,
+September 4.  
+
+Also, if you are doing the Unix version, you have 2 options: (i) omit part of
+4 of the Unix version; or (ii) do part 4, using the hints below, and get up to
+2 extra points (of 10).
+
+The problem is that inserting alphanumeric data (letters) is somewhat tricky. 
+Here is part of a minitab session that adds the required data:
+
+
+ 
+ MTB > insert c1;
+ SUBC> format (a50).
+ DATA> The Basic Practice of Statistics, 2/E
+ DATA> END
+ MTB > insert c2;
+ SUBC> format (a25).
+ DATA> Moore
+ DATA> END
+ MTB > insert c3
+ DATA> 77.75
+ DATA> end
+ MTB > print c1-c3
+ 
+ 
+ Textbook
+   A Brief Introduction to Probability and Statistics
+   Elementary Statistics, 5/E                        
+   Elementary Statistics, 8/E                        
+   Elementary Statistics: Picturing the World, 2/E   
+   Exploring Statistics, 2/E                         
+   First Course in Statistics, A, 8/E                
+   Introduction to Statistics                        
+   Introduction to the Practice of Statistics, 3/E   
+   Introductory Statistics, 4/E                      
+   Introductory Statistics, 6/E   
+   Learning Statistics with Real Data                
+   Mind on Statistics                                
+   Statistics, 9/E                                   
+   The Basic Practice of Statistics, 2/E             
+ 
+ 
+  ROW                         Author    Price
+ 
+    1   Mendenhall, Beaver, & Beaver    80.95
+    2   Triola                          97.00
+    3   Johnson & Kuby                  94.95
+    4   Larson & Farber                 88.00
+ Continue? y
+    5   Kitchens                        99.95
+    6   McClave, Benson, & Sincich      93.33
+    7   Woodbury                        87.95
+    8   Moore & McCabe                 111.20
+    9   Mann                           144.50
+   10   Weiss                           98.00
+   11   Trumbo                          20.95
+   12   Utts & Heckard                  93.95
+   13   McClave & Sincich               96.00
+   14   Moore                           77.75
+ 
+ MTB > 
+
+
+The point is that to add alphanumeric data, you need the "FORMAT" subcommand
+of insert.  The line 
+         format (a50).
+tells minitab that you want to enter up to 50 characters.  Note
+carefully the periods and semicolons, they are essential!
+
+Good luck,
+
+Doug Ulmer
