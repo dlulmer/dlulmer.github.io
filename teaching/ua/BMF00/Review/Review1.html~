@@ -1,0 +1,67 @@
+<HTML>
+<HEAD><TITLE>Business Math II, Review Topics</TITLE></Head>
+
+<BODY BGCOLOR = #FEFEFE>
+
+<H1 ALIGN=CENTER> Business Math II (Math 115B), Section 8, Fall
+2000<br>Review topics for Midterm 1</H1>
+
+<ul>
+  <li>Integration:
+      <ul>
+	<li>Midpoint sums:
+	    <ul>
+	      <li>Simple midpoint sums by hand
+	      <li>Representing the relevant quantities on a graph
+	      <li>Constructing spreadsheets to compute midpoint sums
+	    </ul>
+	<li>Integrals as (signed) areas
+	<li>Integrals representing probabilities, expected values, and
+	    variances 
+      </ul>
+  <li>Distributions:
+      <ul>
+	<li>Basics about binomial, exponential, uniform, and normal
+	    random variables (Definitions, typical applications,
+	    graphs and formulas for PDFs, PMFs, and CDFs, as appropriate)
+	<li>Expected value, variance, and standard deviation of a
+	    random variable (continuous or discrete) 
+	<li>Interpretation and application of expected value, variance,
+	    and standard deviation 
+	<li>Standardization
+      </ul>
+  <li>Samples:
+      <ul>
+	<li>Computing samples means, variances, and standard deviations
+	<li>Properties of the sample mean
+	    <!-- MATH: $\overline x$ -->
+            <IMG WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+	    SRC="xbar.gif"  ALT="${\overline x}$">
+	<li>Central limit theorem
+	<li>Confidence intervals
+      </ul>
+  <li>Excel:
+      <ul>
+	<li>Computing midpoint sums
+	<li>Functions for binomial and normal random variables
+	<li>Functions for sample means, variances, standard deviations
+	<li>Creating histograms and approximate PDFs
+	<li>Graphing functions
+	<li>Random number generation
+      </ul>
+</ul>
+
+
+<HR>
+<p><br>
+<address>
+<img src="../../../images/imail3.gif">
+<a href="mailto:ulmer@math.arizona.edu"> Douglas Ulmer</A>
+<br>
+August 19, 2000
+</address>
+</body>
+</html>
+
+
+
